@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: #FFEEDB;
+  font-size: 34px;
+  font-family: "Viaoda Libre", sans-serif;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+.logo img {
+  width: 65px;
+  min-width: 65px;
+  margin: 0 15px 0 0;
+}
+
+.logo-text span {
+  display: block;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}

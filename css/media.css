@@ -1,0 +1,129 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1300px) {
+  footer {
+    padding: 40px 0;
+  }
+  footer::before {
+    width: 300px;
+    height: 300px;
+  }
+  footer .box-text p {
+    margin: 0 0 20px;
+  }
+  footer .box-text p:last-child {
+    margin: 0;
+  }
+  footer .logo {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+  .list-social {
+    margin: 0 0 20px;
+  }
+  .list-social li a {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    padding: 12px;
+  }
+  .footer-box {
+    font-size: 20px;
+  }
+  .link-document {
+    margin: 0 0 20px auto;
+  }
+  .copyright {
+    margin: 20px 0 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .list-social li {
+    margin: 0 5px 0 0;
+  }
+  .list-social li a {
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 8px;
+  }
+  footer::before {
+    width: 203px;
+    height: 203px;
+    bottom: -45px;
+  }
+  footer .logo {
+    font-size: 12px;
+  }
+  footer .box-text p {
+    margin: 0 0 15px;
+  }
+  footer .box-text p:last-child {
+    margin: 0;
+  }
+  .footer-box {
+    font-size: 10px;
+  }
+  .link-document {
+    margin: 0 0 15px auto;
+  }
+}
+@media only screen and (max-width: 370px) {
+  footer {
+    padding: 100px 0;
+    font-size: 14px;
+  }
+  footer:before {
+    display: none;
+  }
+  footer .logo {
+    margin: 0 auto 20px;
+    font-size: 17px;
+    text-align: left;
+  }
+  footer .logo img {
+    width: 36px;
+    min-width: 36px;
+  }
+  footer .box-text p {
+    margin: 0 0 10px;
+  }
+  .footer-box {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+  .footer-box:last-child {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .list-social {
+    justify-content: center;
+    margin: 0 auto 10px;
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border-radius: 15px;
+  }
+  .d-mobile {
+    display: block;
+  }
+  .d-pc-tablet {
+    display: none;
+  }
+  .text-forbidden {
+    font-size: 12px;
+    margin: 0 auto 15px;
+  }
+  .link-document {
+    margin: 0 auto 15px;
+  }
+  .link-document:last-child {
+    margin: 0 auto;
+  }
+  .copyright {
+    margin: 10px auto 0;
+  }
+}
