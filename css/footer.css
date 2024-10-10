@@ -61,16 +61,23 @@ footer .box-text p:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
   border-radius: 10px;
   background: #9A0000;
   fill: #FFEEDB;
 }
+.list-social li a svg {
+  width: 35px;
+  height: 35px;
+}
 .list-social li a:hover {
   background: #FFEEDB;
   fill: #9A0000;
+}
+.list-social li a .svg-icon-insta {
+  margin: 0 0 7px;
 }
 
 .link-document {

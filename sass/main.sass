@@ -1,10 +1,288 @@
 @import "vars"
 
+// needed
+.needed
+  background: url('../img/needed-bg.png') no-repeat center
+  background-size: cover  
+  padding: 270px 0 190px
+  position: relative
+  z-index: 1
+  margin: 70px 0 -90px  
+  color: $black
+  h2
+    text-align: left
+    margin: 10px 0 0
+    font-style: normal
+    
+
+.needed-box
+  width: 100%
+  height: 100%
+  border: 3px solid $red
+  border-radius: 30px
+  font-size: 36px
+  line-height: normal
+  text-align: center
+  padding: 35px 40px 40px
+  &__icon
+    @include d-flex
+    height: 248px
+    margin: 0 auto 35px
+    img
+      max-height: 100%
+  .box-text
+    p
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+    span
+      font-size: 26px
+      line-height: normal
+      display: block
+      font-style: italic
+      color: rgba($black, .5)    
+
+
+
+// stages-ritual
+.stages-ritual
+  background: url('../img/stages-texture.png') no-repeat center
+  background-size: cover
+  padding: 205px 0 0
+  h2
+    margin: 0 auto 60px
+    max-width: 900px
+  h3
+    margin: 0 auto 35px
+    text-align: center
+    font-weight: 600
+
+.stages-ritual-box
+  text-align: center
+  width: 100%
+  font-size: 26px
+  font-style: italic
+  color: $beige
+  h4
+    font-size: 36px
+    font-weight: 600
+  .box-text
+    margin: 10px 0 0  
+  &__img
+    @include d-flex
+    width: 100%
+    margin: 0 auto 45px
+
+// days-ritual
+.days-ritual
+  background: url('../img/days-ritual-bg.png') no-repeat center
+  background-size: cover
+  margin: 130px 0
+
+  &__column
+    max-width: 750px
+    width: 100%
+    .box-text
+      font-size: 36px
+      line-height: 130%
+      strong
+        color: $beige
+        display: inline
+  h2
+    text-align: left
+
+.days-icons
+  margin: 105px 0 40px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  li
+    @include d-flex
+    width: 100px
+    height: 100px
+    min-width: 100px
+    border-radius: 10px
+    background: linear-gradient(to right, #9A0000 0%,#6A141A 100%)
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.actually-text
+  display: flex
+  align-items: center
+  font-size: 36px
+  font-style: italic
+  line-height: 130%
+  margin: 40px 0 0
+  img
+    margin: 0 20px 0 0
+    width: 68px
+    min-width: 68px
+
+.schedule-column
+  margin: 0 0 0 auto
+  max-width: 900px
+  width: 100%
+  transform: rotate(4deg)
+  background: url('../img/schedule-bg.png') no-repeat center
+  background-size: cover
+  padding: 40px
+  h3
+    font-size: 70px
+    line-height: 130%
+    font-style: italic
+    font-family: $title-font
+    color: $beige
+    margin: 0 0 35px
+
+.schedule-box
+  width: 100%
+  position: relative
+  z-index: 1
+  padding: 0 0 20px
+  margin: 0 0 30px
+  font-size: 32px
+  line-height: 130%
+  h4
+    margin: 0 0 20px
+    width: 100%
+    font-size: 40px
+    font-weight: 600
+    color: $beige
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 1px
+    background: url('../img/schedule-line.svg') no-repeat center
+    background-size: 100%
+    z-index: -1
+  &:last-child
+    margin: 0
+    padding: 0
+    &::before
+      display: none
+
+//  result seciton
+.result-section
+  background: #070707 url('../img/result-bg.png') no-repeat center
+  background-size: cover
+  margin: 0 0 60px
+  h2
+    margin: 0 auto 90px
+    max-width: 1300px
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.result-section-box
+  width: calc(50% - 20px)
+  min-height: 440px
+  margin: 0 0 40px
+  border-radius: 20px
+  position: relative
+  z-index: 1
+  background: url('../img/subtract1.png') no-repeat right center
+  background-size: contain
+  color: $black
+  padding: 50px
+  font-size: 32px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  h3
+    color: $red
+    max-width: 760px
+    margin: 0 0 50px
+  &__icon
+    margin: 0 0 40px
+
+  .box-text
+    margin: auto 0 0
+    max-width: 700px
+  &:nth-child(even)
+    text-align: right
+    background: url('../img/subtract2.png') no-repeat left center
+    background-size: contain
+    &:before
+      content: ''
+      position: absolute
+      top: 47%
+      transform: translate(0,-50%)
+      position: absolute
+      z-index: 1
+      left: -123px
+      width: 208px
+      height: 208px
+      background: url('../img/result-circle1.svg') no-repeat center
+      background-size: 100%
+    h3
+      margin: 0 0 50px auto
+    .box-text
+      margin-left: auto
+    .result-section-box
+      &__icon
+        margin: 0 0 40px auto
+  &:nth-child(4)
+    &:before
+      background: url('../img/result-circle2.svg') no-repeat center
+      background-size: 100%
+  &:last-child
+    margin: 0 auto
+    text-align: center
+    background: url('../img/subtract3.png') no-repeat center
+    background-size: contain
+    &:before
+      content: ''
+      position: absolute
+      top: 47%
+      transform: translate(0,-50%)
+      position: absolute
+      z-index: 1
+      left: -123px
+      width: 208px
+      height: 208px
+      background: url('../img/result-circle2.svg') no-repeat center
+      background-size: 100%
+    &:after
+      content: ''
+      position: absolute
+      top: 47%
+      transform: translate(0,-50%)
+      position: absolute
+      z-index: 1
+      right: -123px
+      width: 208px
+      height: 208px
+      background: url('../img/result-circle1.svg') no-repeat center
+      background-size: 100%
+    .result-section-box
+      &__icon
+        margin: 0 auto 40px
+      &__decor
+        &:nth-child(2)
+          left: auto
+          right: -123px
+    .box-text
+      margin: 50px auto 0
+      max-width: 750px
+
 // prices
 .prices
-  background: $white url('../img/prices-bg.png') no-repeat center
+  background: url('../img/prices-bg.png') no-repeat center
   background-size: cover
   padding: 265px 0 180px
+  position: relative
+  z-index: 2
+  overflow: hidden
+  margin: 0 0 -350px
   h2
     color: $black
 
@@ -30,10 +308,11 @@
     .subtext
       display: block
       color: rgba($black, .3)
-      margin: 0 auto 20px
+      margin: 0 auto 10px
     h3
       font-size: 70px
       font-family: $title-font
+      line-height: 115%
   &__bg
     position: absolute
     left: 0
@@ -55,8 +334,19 @@
     margin: 60px 0 0
   .btn
     width: 100%
+    margin: 40px auto 0
+  .box-text
+    font-size: 26px
+    color: $beige
+    font-style: italic
+    margin: 20px 0 0
+    p
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
 
 .price-card1
+  margin: 30px 0 0
   color: $black
   .price-card
     &__bg
@@ -65,46 +355,76 @@
 
 .price-card2
   transform: rotate(5deg)
+  margin: 140px 10px 0 -20px
+  z-index: 2
+  position: relative
   .price-card
     &__head
       margin: 0 0 15px
       border: none
       color: $white
       background: $black
+      .subtext
+        color: rgba($white, .3)
+    &__bg
+      left: auto
+      right: 10px
+      top: 10px
     &__body
       background: $black
       color: $white
       border: none
-    .box-text
-      margin: 0 0 35px 0
+  .list-point
+    li
+      &::before
+        filter: invert(1)
 
 .price-card3
   transform: rotate(-5deg)
   .price-card
     &__head
-      color: $red
+      margin: 0 0 15px
+      background: $red
       color: $white
       border: none
+      .subtext
+        color: rgba($white, .3)
       h3
         font-size: 110px
     &__body
       background: $red
       border: none
       color: $white
+    &__bg
+      mix-blend-mode: overlay
+  .list-point
+    li
+      &::before
+        filter: invert(1)
 
 .price
   font-family: $title-font
   font-size: 70px
-  font-style: italic
   text-align: center
   line-height: normal
   margin: 60px auto 0
+
+.prices-slogan
+  text-align: center
+  font-size: 70px
+  line-height: 135%
+  font-family: $title-font
+  color: $black
+  margin: 80px auto 0
+  max-width: 1530px
+  span
+    font-style: italic
 
 // blockquote
 .blockquote
   background: #070707 url('../img/blockquote-bg.png') no-repeat center bottom
   background-size: cover
-  padding: 0 0 60px
+  padding: 230px 0 60px
   .container
     align-items: flex-end
     justify-content: center

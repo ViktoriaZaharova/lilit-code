@@ -172,4 +172,4 @@ const grain = new Grain(el);
 
 
 // animation
-new WOW().init();
+// new WOW().init(); 
