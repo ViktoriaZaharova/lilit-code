@@ -40,10 +40,10 @@ table {
 }
 
 body {
-  font-size: 28px;
+  font-size: 32px;
   min-width: 320px;
   position: relative;
-  line-height: 135%;
+  line-height: 130%;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   background: #070707 url("../img/noise.png") no-repeat center;
@@ -252,6 +252,50 @@ ul, ol {
   background-size: 100%;
 }
 
+h1, .h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 240px;
+  font-family: "Noto Serif Display", sans-serif;
+  font-style: normal;
+  line-height: 115%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px;
+}
+h1 span, .h1 span {
+  display: block;
+  background: #FFEEDB;
+  background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 19%, #FFEEDB 86%, #FFEEDB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 .h1-gradient, .h1 .h1-gradient {
+  background: #FFEEDB;
+  background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 13%, rgba(255, 238, 219, 0.6) 46%, #FFEEDB 87%, #FFEEDB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h1-decor {
+  font-size: 260px;
+  position: relative;
+  z-index: 1;
+}
+.h1-decor::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 36px;
+  left: 214px;
+  width: 116px;
+  height: 167px;
+  background: url("../img/title-icon.svg") no-repeat center;
+  background-size: 100%;
+}
+
 h2 {
   font-family: "Noto Serif Display", sans-serif;
   font-size: 110px;
@@ -353,10 +397,54 @@ h3 {
   color: #FFEEDB;
 }
 
+.title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 60px;
+}
+.title-wrapper h2 {
+  margin: 0 auto 0 0;
+}
+
 .slick-slider {
   width: 100%;
 }
 
 .slick-slide {
   outline: none;
+}
+
+.slider-nav {
+  display: flex;
+  align-items: center;
+}
+
+.slick-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  width: 90px;
+  height: 90px;
+  min-width: 90px;
+  border-radius: 50%;
+  background: #9A0000;
+  fill: none;
+  stroke: #ECECEC;
+  margin: 0 10px 0 0;
+  box-shadow: none;
+}
+.slick-arrow:last-child {
+  margin: 0;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  background: #FFEEDB;
+  stroke: #9A0000;
+}
+.slick-arrow svg {
+  width: 10px;
+  height: 21px;
 }

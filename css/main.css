@@ -1,3 +1,122 @@
+.result-ritual {
+  background: url("../img/result-ritual-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 200px 0 0;
+  position: relative;
+  z-index: 2;
+}
+.result-ritual h2 {
+  max-width: 820px;
+  text-align: left;
+}
+.result-ritual h2 span {
+  font-style: normal;
+}
+
+.result-ritual-slider .slick-slide {
+  margin: 0 20px 0 0;
+}
+
+.result-ritual-card {
+  width: 593px;
+}
+.result-ritual-card__img {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 35px;
+}
+.result-ritual-card h3 {
+  margin: 30px 0;
+  color: #FFEEDB;
+}
+
+.about-course {
+  background: #070707 url("../img/about-bg.png") no-repeat center;
+  background-size: cover;
+  padding: 160px 0 100px;
+}
+.about-course .container {
+  align-items: center;
+}
+.about-course__img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-course__content {
+  width: 50%;
+  text-align: center;
+}
+.about-course .box-text {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 35px;
+}
+.about-course .box-text strong {
+  font-weight: 600;
+}
+.about-course .box-text:last-child {
+  margin: 0 auto;
+}
+.about-course .box-text::before {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 28px;
+  background: url("../img/about-icon.svg") no-repeat center;
+  background-size: 100%;
+  margin: 0 auto 20px;
+}
+
+.for-whom h2 {
+  margin: 0 auto 70px;
+}
+.for-whom h2 span {
+  display: block;
+  font-style: normal;
+}
+
+.for-whom-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.for-whom-card {
+  width: 100%;
+  min-height: 520px;
+  text-align: center;
+  background: url("../img/bg-card.png") no-repeat center;
+  background-size: cover;
+  padding: 80px 20px 20px;
+  font-size: 36px;
+  line-height: normal;
+  position: sticky;
+  top: 0;
+  margin: 0 0 40px;
+}
+.for-whom-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.for-whom-card h3 {
+  margin: 0 auto 20px;
+  color: #FFEEDB;
+}
+.for-whom-card .box-text {
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .needed {
   background: url("../img/needed-bg.png") no-repeat center;
   background-size: cover;
@@ -22,6 +141,8 @@
   line-height: normal;
   text-align: center;
   padding: 35px 40px 40px;
+  position: relative;
+  z-index: 1;
 }
 .needed-box__icon {
   display: flex;
@@ -45,6 +166,15 @@
   display: block;
   font-style: italic;
   color: rgba(19, 19, 19, 0.5);
+}
+.needed-box__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.needed-box__content {
+  margin-left: auto;
+  max-width: 380px;
 }
 
 .stages-ritual {
@@ -196,7 +326,8 @@
 .result-section {
   background: #070707 url("../img/result-bg.png") no-repeat center;
   background-size: cover;
-  margin: 0 0 60px;
+  padding: 200px 0;
+  margin: -100px 0;
 }
 .result-section h2 {
   margin: 0 auto 90px;

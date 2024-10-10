@@ -1,12 +1,12 @@
 // slick slider
-$('.intensive-give-slider').slick({
-  infinite: false,
+$('.result-ritual-slider').slick({
+  infinite: true,
   slidesToShow: 1,
   variableWidth: true,
   swipeToSlide: true,
-  prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-right.svg" alt=""></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt=""></button>',
-  appendArrows: '.intensive-give-slider__nav',
+  appendArrows:'.result-ritual-slider__nav',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
   responsive: [
     {
       breakpoint: 576,
@@ -20,42 +20,42 @@ $('.intensive-give-slider').slick({
 
 // модальные окна (несколько)
 $(function () {
-  let overlay = $('.overlay'),    
-      open_modal = $('.open_modal'),
-      close = $('.modal__close, .overlay'),
-      modal = $('.modal__div');
+  let overlay = $('.overlay'),
+    open_modal = $('.open_modal'),
+    close = $('.modal__close, .overlay'),
+    modal = $('.modal__div');
 
-  open_modal.on('click',function (event) {
-      event.preventDefault();
+  open_modal.on('click', function (event) {
+    event.preventDefault();
 
-      modal.css('display', 'none').animate({
-          opacity: 0,
-          top: '45%'
-      }, 200);
+    modal.css('display', 'none').animate({
+      opacity: 0,
+      top: '45%'
+    }, 200);
 
-      let div = $(this).attr('href');
-      overlay.fadeIn(400,
-          function () {
-              $(div)
-                  .css('display', 'flex')
-                  .animate({
-                      opacity: 1,
-                      top: '50%'
-                  }, 200);
-          });
+    let div = $(this).attr('href');
+    overlay.fadeIn(400,
+      function () {
+        $(div)
+          .css('display', 'flex')
+          .animate({
+            opacity: 1,
+            top: '50%'
+          }, 200);
+      });
   });
 
   close.on('click', function () {
-      modal
-          .animate({
-                  opacity: 0,
-                  top: '45%'
-              }, 200,
-              function () {
-                  $(this).css('display', 'none');
-                  overlay.fadeOut(400);
-              }
-          );
+    modal
+      .animate({
+        opacity: 0,
+        top: '45%'
+      }, 200,
+        function () {
+          $(this).css('display', 'none');
+          overlay.fadeOut(400);
+        }
+      );
   });
 });
 //end

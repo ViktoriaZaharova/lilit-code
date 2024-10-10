@@ -37,10 +37,10 @@ table
   border-spacing: 0
 
 body
-  font-size: 28px
+  font-size: 32px
   min-width: 320px
   position: relative
-  line-height: 135%
+  line-height: 130%
   font-family: $default-font
   font-weight: normal
   background: $black-bg url('../img/noise.png') no-repeat center
@@ -217,6 +217,44 @@ ul, ol
       background: url('../img/point.svg') no-repeat center
       background-size: 100%
 
+h1, .h1
+  width: fit-content
+  font-size: 240px
+  font-family: $title-font
+  font-style: normal
+  line-height: 115%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 auto 40px
+  span
+    display: block
+    background: #FFEEDB
+    background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 19%, #FFEEDB 86%, #FFEEDB 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+  .h1-gradient
+    background: #FFEEDB
+    background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 13%, rgba(#FFEEDB, .6) 46%, #FFEEDB 87%, #FFEEDB 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.h1-decor
+  font-size: 260px
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    bottom: 36px
+    left: 214px
+    width: 116px
+    height: 167px
+    background: url('../img/title-icon.svg') no-repeat center
+    background-size: 100%
+
 h2
   font-family: $title-font
   font-size: 110px
@@ -300,9 +338,44 @@ h3
 .color-beige
   color: $beige
 
+.title-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-end
+  margin: 0 0 60px
+  h2
+    margin: 0 auto 0 0 
+
 // slick slider
 .slick-slider
   width: 100%
 
 .slick-slide
   outline: none
+
+.slider-nav
+  display: flex
+  align-items: center
+
+.slick-arrow
+  @include d-flex
+  position: relative
+  z-index: 1
+  opacity: 1
+  width: 90px
+  height: 90px
+  min-width: 90px
+  border-radius: 50%
+  background: $red
+  fill: none
+  stroke: $white
+  margin: 0 10px 0 0
+  box-shadow: none
+  &:last-child
+    margin: 0
+  &:hover, &:focus
+    background: $beige  
+    stroke: $red  
+  svg
+    width: 10px
+    height: 21px  
