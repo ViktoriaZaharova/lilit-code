@@ -1,6 +1,51 @@
 /*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1600px)
+  h1, .h1
+    font-size: 180px
+
+  .h1-decor
+    font-size: 200px
+    line-height: normal
+    &::before
+      width: 90px
+      height: 133px
+      bottom: 56px
+      left: 167px
+
+  .home-photo
+    width: calc(100% - 700px)
+    padding: 0 30px 0 0
+    &__text
+      font-size: 22px
+
+  .home-content
+    max-width: 700px
+    .box-text
+      font-size: 20px
+      max-width: 276px
+      top: 75px
+
+  .lilit-type-footer__img
+    bottom: 120px
+
+  .lilit-type-box
+    max-width: 385px
+
+  .prices
+    margin: 0 0 -250px  
+
+  .blockquote-text
+    font-size: 30px
+    width: 48%
+    max-width: none
+
+  .blockquote-photo
+    width: 52%
+    max-width: none
+    padding: 0 20px 0 0  
+
 @media only screen and (max-width: 1300px)
   footer
     padding: 40px 0
@@ -34,6 +79,89 @@
   .copyright
     margin: 20px 0 0
 
+  .logo-text span
+    font-size: 20px
+
+  .logo
+    font-size: 22px
+    img
+      width: 50px
+      min-width: 50px
+
+  body
+    font-size: 24px
+    line-height: normal
+
+  .container
+    padding: 0 20px
+
+  .btn
+    font-size: 16px
+    height: 58px
+    &::before
+      width: 36px
+      height: 15px
+      min-width: 36px
+      margin: 0 10px 0 0
+
+  .link-social
+    width: 45px
+    height: 45px
+    min-width: 45px
+
+  .start-date
+    font-size: 20px
+
+  .h1-decor
+    font-size: 147px
+    line-height: 1
+
+  h1, .h1
+    font-size: 146px
+    line-height: 1
+    .h1-gradient
+      font-size: 92px
+
+  .h1-decor::before
+    width: 64px
+    height: 93px
+    left: 124px
+    bottom: 15px
+
+  .home-content
+    max-width: 365px
+    .subtitle
+      padding: 0 0 0 60px
+      font-size: 22px
+
+  .home-content .box-text
+    position: relative
+    top: 0
+    bottom: 0
+    right: 0
+    max-width: 300px
+    margin: 0 auto
+
+  .home
+    h1
+      margin: 0 auto 15px
+    .h1-gradient
+      padding: 0
+      margin: 0
+
+  .home-photo
+    width: calc( 100% - 365px )
+    .box-text
+      margin: 0 0 0 auto
+      text-align: right
+    &__text
+      right: 0
+
+  .lilit-type
+    padding: 200px 0 105px    
+    h2
+      font-size: 180px
+
 @media only screen and (max-width: 992px)
 
 @media only screen and (max-width: 768px)
@@ -52,7 +180,7 @@
       height: 203px
       bottom: -45px
     .logo
-      font-size: 12px
+      font-size: 17px
     .box-text
       p
         margin: 0 0 15px
@@ -65,7 +193,60 @@
   .link-document
     margin: 0 0 15px auto
 
+  body
+    font-size: 16px
+    line-height: normal
+
+  .logo-text span
+    font-size: 17px
+
+  .logo img
+    width: 45px
+    min-width: 45px
+
+  .start-date
+    font-size: 16px
+
+  .home
+    padding: 0 0 100px
+    .d-tablet-pc
+      display: none
+    .d-mobile
+      display: block
+    h1
+      margin: 0 auto
+    .subtitle
+      text-align: center
+      padding: 0
+
+  .home-photo
+    width: 100%
+    padding: 0
+    margin: 0
+
+  .home-content
+    max-width: none
+    padding: 100px 0 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    .subtitle
+      display: none
+
+  .start-date
+    order: -1
+    margin: 0 auto 10px
+    padding: 10px 20px
+
+  header
+    padding: 24px 0
+
+  .logo
+    font-size: 19px
+
 @media only screen and (max-width: 576px)
+  .start-date
+    font-size: 14px
 
 @media only screen and (max-width: 480px)
 
@@ -73,7 +254,7 @@
 
 @media only screen and (max-width: 370px)
   footer
-    padding: 100px 0
+    padding: 60px 0 20px
     font-size: 14px
     &:before
       display: none
@@ -100,11 +281,15 @@
   .list-social
     justify-content: center
     margin: 0 auto 10px
-    li a
-    width: 55px
-    height: 55px
-    min-width: 55px
-    border-radius: 15px
+    li
+      a
+        width: 55px
+        height: 55px
+        min-width: 55px
+        border-radius: 15px
+        svg
+          width: 27px
+          height: 23px
 
   .d-mobile
     display: block
@@ -123,3 +308,29 @@
 
   .copyright
     margin: 10px auto 0
+
+  .home-content .box-text .icon
+    max-width: 16px
+    margin: 0 auto 10px
+
+  .home-photo
+    &__text
+      max-width: 155px
+      .box-text
+        font-size: 11px
+    &__icon
+      max-width: 20px
+
+  .btn
+    padding: 10px
+
+  .h1-decor, h1, .h1
+    font-size: 140px
+
+  h1 .h1-gradient, .h1 .h1-gradient
+    font-size: 90px
+
+  .h1-decor::before
+    left: 117px
+    width: 60px
+    height: 90px  

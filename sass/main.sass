@@ -16,6 +16,10 @@
     margin: -20px 0 0
     max-width: none
     align-items: flex-start
+  .h1-decor
+    background: linear-gradient(to left, rgba(#FFEEDB, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(#FFEEDB, 0) 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
   .h1-gradient
     margin: -50px 0 0 0
     width: 100%
@@ -32,7 +36,7 @@
     width: 100%
     position: absolute
     z-index: 1
-    right: 0
+    right: 50px
     bottom: 30px
     text-align: right
     font-style: italic
@@ -85,7 +89,7 @@
   padding: 15px 22px
   width: fit-content
   margin: 25px auto
-  
+
   &::before
     content: ''
     display: inline-block
@@ -729,6 +733,7 @@
   .container
     align-items: flex-end
     justify-content: center
+    flex-wrap: nowrap
   .box-text
     p
       margin: 0

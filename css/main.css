@@ -14,6 +14,11 @@
   max-width: none;
   align-items: flex-start;
 }
+.home .h1-decor {
+  background: linear-gradient(to left, rgba(255, 238, 219, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(255, 238, 219, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .home .h1-gradient {
   margin: -50px 0 0 0;
   width: 100%;
@@ -32,7 +37,7 @@
   width: 100%;
   position: absolute;
   z-index: 1;
-  right: 0;
+  right: 50px;
   bottom: 30px;
   text-align: right;
   font-style: italic;
@@ -855,6 +860,7 @@
 .blockquote .container {
   align-items: flex-end;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .blockquote .box-text p {
   margin: 0;
