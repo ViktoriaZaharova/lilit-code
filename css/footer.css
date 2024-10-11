@@ -121,9 +121,14 @@ footer .box-text p:last-child {
   border-radius: 10px;
   cursor: pointer;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ECECEC;
 }
 
 .modal__wrapper {
+  color: #131313;
   background: #ECECEC;
   width: 100%;
   height: auto;

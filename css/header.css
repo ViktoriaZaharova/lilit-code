@@ -1,3 +1,18 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 40px 0;
+}
+header .logo {
+  margin: 0 auto 0 0;
+}
+header .container {
+  padding: 0;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -18,4 +33,20 @@
   font-family: "Inter Tight", sans-serif;
   font-size: 30px;
   font-weight: 300;
+}
+
+.link-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  background: url("../img/whatsapp.svg") no-repeat center;
+  background-size: 100%;
+  transition: 0.3s ease;
+}
+.link-social:hover {
+  background: url("../img/whatsapp-hover.svg") no-repeat center;
+  background-size: 100%;
 }
