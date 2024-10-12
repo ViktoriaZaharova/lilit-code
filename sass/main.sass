@@ -379,12 +379,12 @@
 
 // days-ritual
 .days-ritual
-  background: url('../img/days-ritual-bg.png') no-repeat center
+  background: $black-bg url('../img/days-ritual-bg.png') no-repeat center
   background-size: cover
-  margin: 130px 0
+  padding: 130px 0
 
   &__column
-    max-width: 750px
+    max-width: 710px
     width: 100%
     .box-text
       font-size: 36px
@@ -505,7 +505,7 @@
   h3
     color: $red
     max-width: 760px
-    margin: 0 0 50px
+    margin: 0 0 auto
   &__icon
     margin: 0 0 40px
 
@@ -529,7 +529,7 @@
       background: url('../img/result-circle1.svg') no-repeat center
       background-size: 100%
     h3
-      margin: 0 0 50px auto
+      margin: 0 0 auto auto
     .box-text
       margin-left: auto
     .result-section-box
@@ -575,8 +575,10 @@
         &:nth-child(2)
           left: auto
           right: -123px
+    h3
+      margin: 0 auto    
     .box-text
-      margin: 50px auto 0
+      margin: auto auto 0
       max-width: 750px
 
 // prices
@@ -701,6 +703,7 @@
       border: none
       color: $white
     &__bg
+      width: 100%
       mix-blend-mode: overlay
   .list-point
     li

@@ -1,9 +1,85 @@
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1700px)
+  .prices
+    margin: 0 0 -150px
 
+  .price-card__head h3
+    font-size: 50px
+
+  .price-card3 .price-card__head h3
+    font-size: 90px
+
+  .price-card__head
+    font-size: 30px
+    line-height: normal
+
+  .price-card__body
+    padding: 40px 30px
+    font-size: 26px
+    line-height: normal
+
+  .price, .prices-slogan
+    font-size: 50px
+    line-height: normal
+
+  .prices-slogan
+    max-width: 1080px
+
+  .result-section-box
+    font-size: 28px
+    background-size: cover
+    &:nth-child(even)
+      background-size: cover
+    &:last-child
+      background-size: cover
+      max-width: 500px
+      width: 100%
+
+  .result-section-box__icon
+    margin: 0 0 20px
+
+  .result-section-box:nth-child(even) .result-section-box__icon
+    margin: 0 0 20px auto
+
+  .schedule-column
+    max-width: 800px
+
+  .schedule-box
+    font-size: 27px
+
+  .days-ritual__column .box-text, .actually-text
+    font-size: 30px
+
+  .days-ritual__column
+    max-width: 640px
+
+  .days-icons
+    margin: 60px 0 30px
+    li
+      width: 70px
+      height: 70px
+      min-width: 70px
+      padding: 10px
+
+  .needed-box
+    font-size: 30px
+    &__content
+      max-width: 320px
+    &__icon
+      height: 210px
+
+  .needed-box__img
+    max-width: 350px
 
 @media only screen and (max-width: 1600px)
   h1, .h1
     font-size: 180px
+
+  h2
+    font-size: 90px
+
+  h3
+    font-size: 30px
 
   .h1-decor
     font-size: 200px
@@ -34,7 +110,10 @@
     max-width: 385px
 
   .prices
-    margin: 0 0 -250px  
+    margin: 0 0 -50px
+
+  .blockquote
+    padding: 60px 0
 
   .blockquote-text
     font-size: 30px
@@ -44,7 +123,73 @@
   .blockquote-photo
     width: 52%
     max-width: none
-    padding: 0 20px 0 0  
+    padding: 0 20px 0 0
+
+  .btn
+    font-size: 28px
+    height: 90px
+    &::before
+      width: 70px
+      min-width: 70px
+      height: 32px
+      margin: 0 10px 0 0
+
+  .result-section-box
+    min-height: auto
+    font-size: 22px
+    line-height: normal
+    h3
+      margin: 0 0 20px
+
+  .result-section-box:nth-child(even):before, .result-section-box:last-child:before
+    width: 150px
+    height: 150px
+    left: -97px
+
+  .result-section-box:last-child:after
+    width: 150px
+    height: 150px
+    right: -97px
+
+  .result-section-box:nth-child(even) h3
+    margin: 0 0 20px
+
+  .result-section-box:last-child h3
+    margin: 0 auto 20px
+
+  .days-ritual__column
+    max-width: 500px
+
+  .days-ritual__column .box-text, .actually-text
+    font-size: 22px
+
+  .schedule-box
+    font-size: 24px
+    h4
+      font-size: 30px
+
+  .actually-text img
+    width: 50px
+    min-width: 50px
+
+  .schedule-column
+    max-width: 650px
+
+  .stages-ritual-box
+    font-size: 24px
+    h4
+      font-size: 30px
+
+  .stages-ritual
+    padding: 140px 0 0
+    h2
+      margin: 0 auto 40px
+
+  .needed-box
+    font-size: 26px
+    padding: 30px
+    &__img
+      max-width: 280px
 
 @media only screen and (max-width: 1300px)
   footer
@@ -128,6 +273,13 @@
     left: 124px
     bottom: 15px
 
+  h2
+    font-size: 80px
+    line-height: normal
+
+  h3
+    font-size: 26px
+
   .home-content
     max-width: 365px
     .subtitle
@@ -158,11 +310,176 @@
       right: 0
 
   .lilit-type
-    padding: 200px 0 105px    
+    padding: 200px 0 105px
     h2
       font-size: 180px
 
+  .price-card__head h3, .price, .prices-slogan
+    font-size: 40px
+
+  .price
+    margin: 20px auto 0
+
+  .prices-slogan
+    max-width: 900px
+
+  .price-card__body
+    font-size: 22px
+    padding: 30px 20px
+
+  .price-card .box-text
+    font-size: 22px
+
+  .result-section
+    margin: 0
+    padding: 0 0 30px
+    h2
+      margin: 0 auto 20px
+
+  .result-section-box
+    font-size: 18px
+    padding: 30px
+    &__icon
+      max-width: 40px
+      margin: 0 0 20px
+
+  .result-section-box:last-child .result-section-box__icon
+    margin: 0 auto 20px
+
+  .schedule-column
+    max-width: 480px
+    h3
+      font-size: 40px
+
+  .schedule-box, .days-ritual__column .box-text, .actually-text
+    font-size: 20px
+
+  .days-ritual__column
+    max-width: 460px
+
+  .needed
+    .col-50
+      width: 100%
+    .col-25
+      width: 50%
+    h2
+      text-align: center
+      margin: 0 auto
+
+  .needed-box__content
+    margin: 0 auto
+
+  .order-mobile-1
+    order: 1
+
 @media only screen and (max-width: 992px)
+  .blockquote-text
+    font-size: 24px
+
+  .prices
+
+    .col-30
+      width: 100%
+
+  .price-card__head
+    min-height: 135px
+    font-size: 16px
+    margin: 0 0 10px
+    border-radius: 15px
+
+  .price-card__body
+    border-radius: 15px
+    padding: 15px
+    font-size: 18px
+
+  .list-point li::before
+    width: 15px
+    height: 15px
+    min-width: 15px
+    margin: 0 10px 0 0
+
+  .price-card
+    margin: 0
+    .btn
+      margin: 20px auto 0
+    .price
+      margin: 25px auto 0
+    .box-text
+      font-size: 16px
+
+  .price-card2
+    margin: 0
+    transform: none
+
+  .price-card3
+    transform: none
+    .price-card__head h3
+      font-size: 66px
+
+  .prices-slogan
+    font-size: 30px
+    margin: 10px auto 0
+
+  .result-section-box
+    font-size: 16px
+    padding: 20px
+
+  .result-section-box:nth-child(even):before
+    width: 100px
+    height: 100px
+    left: -70px
+
+  .result-section-box:last-child:before, .result-section-box:last-child:after
+    width: 100px
+    height: 100px
+
+  .result-section-box:last-child:before
+    left: -70px
+
+  .result-section-box:last-child:after
+    right: -70px
+
+  .days-ritual
+    padding: 60px 0
+    .d-pc-tablet
+      display: none
+    .d-mobile
+      display: block
+    h2
+      text-align: center
+      margin: 0 auto 30px
+
+    &__column
+      order: 1
+      max-width: none
+
+  .schedule-column
+    max-width: none
+    transform: none
+    margin: 0 0 20px
+
+  .days-icons
+    margin: 0 0 15px
+
+  .stages-ritual
+    padding: 75px 0 0
+    .col-50
+      margin: 0 0 25px
+      width: 100%
+      &:last-child
+        margin: 0
+    h2
+      margin: 0 auto 10px
+    h3
+      margin: 0 auto 20px
+
+  .stages-ritual-box
+    font-size: 20px
+    &__img
+      margin: 0 auto 15px
+
+  .needed
+    margin: 70px 0
 
 @media only screen and (max-width: 768px)
   .list-social li
@@ -244,9 +561,202 @@
   .logo
     font-size: 19px
 
+  .blockquote-text
+    font-size: 18px
+
+  h2
+    font-size: 70px
+    margin: 0 0 20px
+
+  h3
+    font-size: 20px
+
+  .result-section
+    .wrapper
+      flex-direction: column
+      align-items: center
+
+  .result-section-box
+    font-size: 16px
+    margin: 0 auto 15px
+    width: 100%
+    max-width: 300px
+    background: url('../img/subtract-bg-mobile3.png') no-repeat center
+    background-size: cover
+    padding: 20px 20px 30px
+    .box-text, h3
+      max-width: 300px
+    &::before
+      content: ''
+      position: absolute
+      z-index: 1
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: -55px
+      background: url("../img/result-circle1.svg") no-repeat center
+      background-size: 100%
+      width: 100px
+      height: 100px
+    &:first-child
+      background: url('../img/subtract-bg-mobile.png') no-repeat center bottom
+      background-size: cover
+    &:nth-child(even)
+      text-align: left
+      background: url('../img/subtract-bg-mobile3.png') no-repeat center
+      background-size: cover
+      &::before
+        left: 50%
+        transform: translate(-50%,0)
+        bottom: -55px
+        top: auto
+        background: url("../img/result-circle2.svg") no-repeat center
+        background-size: 100%
+      .result-section-box__icon
+        margin: 0 0 20px
+      .box-text
+        margin: 0
+    &:last-child
+      background: url('../img/subtract-bg-mobile2.png') no-repeat center top
+      background-size: cover
+      max-width: 300px
+      text-align: left
+      &::before, &::after
+        display: none
+      .result-section-box__icon
+        margin: 0 0 20px
+
+  .needed-box
+    font-size: 18px
+    &__content
+      margin: 0 0 0 auto
+    &__icon
+      height: 160px
+    .box-text
+      span
+        font-size: 14px
 @media only screen and (max-width: 576px)
+  h2
+    font-size: 40px
+    line-height: normal
+
   .start-date
     font-size: 14px
+
+  .blockquote
+    padding: 70px 0 0
+    .container
+      flex-wrap: wrap
+
+  .blockquote-text
+    font-size: 15px
+    order: -1
+    width: 100%
+
+  .blockquote-autor
+    margin: 15px 0 0
+
+  .blockquote-photo
+    padding: 0
+    width: 100%
+
+  .price-card ul li
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+
+  .price-card1 .price-card__bg
+    max-width: 152px
+    height: 126px
+
+  .price-card2 .price-card__bg
+    max-width: 73px
+
+  h3
+    font-size: 16px
+
+  .result-section-box
+    h3
+      margin: 0 0 15px
+    &:last-child
+      margin: 0 0 15px
+
+  .schedule-box, .days-ritual__column .box-text
+    font-size: 16px
+
+  .actually-text
+    font-size: 14px
+    margin: 20px 0 0
+    img
+      width: 27px
+      min-width: 27px
+
+  .days-icons
+    li
+      width: 40px
+      height: 40px
+      min-width: 40px
+      border-radius: 4px
+      margin: 0 10px 0 0
+
+  .schedule-column
+    padding: 20px
+    max-width: 300px
+    background: url('../img/schedule-bg-mobile.png') no-repeat center
+    background-size: cover
+
+    h3
+      font-size: 28px
+      margin: 0 0 15px
+
+  .schedule-box
+    font-size: 12px
+    padding: 0 0 10px
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+      padding: 0
+    h4
+      font-size: 16px
+      margin: 0 0 7px
+    .box-text
+      p
+        margin: 0 0 10px
+        &:last-child
+          margin: 0
+
+  .stages-ritual-box
+    font-size: 14px
+    h4
+      font-size: 16px
+
+  .needed
+    margin: 0
+    background: url('../img/needed-bg-mobile.png') no-repeat center
+    background-size: cover
+    padding: 110px 0 50px
+
+  .mb-40
+    margin-bottom: 20px
+
+  .row
+    margin: 0 -10px
+
+  .col-25
+    padding: 0 10px
+
+  .needed-box
+    border-radius: 15px
+    padding: 10px
+    font-size: 14px
+    &__icon
+      height: 80px
+    &__img
+      max-width: 167px
+    &__content
+      max-width: 180px  
+    .box-text
+      span
+        font-size: 9px
 
 @media only screen and (max-width: 480px)
 
@@ -333,4 +843,10 @@
   .h1-decor::before
     left: 117px
     width: 60px
-    height: 90px  
+    height: 90px
+
+  .prices
+    background: url('../img/prices-bg-mobile.png') no-repeat center top
+    background-size: cover
+    margin: 0
+    padding: 100px 0 40px
