@@ -34,7 +34,7 @@ blockquote:before, blockquote:after, q:before, q:after
 
 table
   border-collapse: collapse
-  border-spacing: 0 
+  border-spacing: 0
 
 body
   font-size: 32px
@@ -49,7 +49,7 @@ body
   z-index: 1
 
 html, body
-  overflow-x: hidden 
+  overflow-x: hidden
 
 .grain
   width: 100%
@@ -234,9 +234,12 @@ h1, .h1
   span
     display: block
     background: #FFEEDB
-    background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 19%, #FFEEDB 86%, #FFEEDB 100%)
+    background: linear-gradient(to left, rgba(#FFEEDB, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(#FFEEDB, 0) 100%)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    // background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 19%, #FFEEDB 86%, #FFEEDB 100%)
+    // -webkit-background-clip: text
+    // -webkit-text-fill-color: transparent
   .h1-gradient
     background: #FFEEDB
     background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 13%, rgba(#FFEEDB, .6) 46%, #FFEEDB 87%, #FFEEDB 100%)
@@ -247,6 +250,9 @@ h1, .h1
   font-size: 260px
   position: relative
   z-index: 1
+  background: linear-gradient(to left, rgba(#FFEEDB, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(#FFEEDB, 0) 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
   &::before
     content: ''
     position: absolute
@@ -324,7 +330,7 @@ h3
   margin-bottom: 20px
 
 .mb-30
-  margin-bottom: 30px  
+  margin-bottom: 30px
 
 .mb-40
   margin-bottom: 40px
@@ -350,7 +356,7 @@ h3
   align-items: flex-end
   margin: 0 0 60px
   h2
-    margin: 0 auto 0 0 
+    margin: 0 auto 0 0
 
 // slick slider
 .slick-slider
@@ -380,11 +386,11 @@ h3
   &:last-child
     margin: 0
   &:hover, &:focus
-    background: $beige  
-    stroke: $red  
+    background: $beige
+    stroke: $red
   svg
     width: 10px
-    height: 21px  
+    height: 21px
 
 .d-mobile
-  display: none    
+  display: none

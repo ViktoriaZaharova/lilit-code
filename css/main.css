@@ -14,11 +14,6 @@
   max-width: none;
   align-items: flex-start;
 }
-.home .h1-decor {
-  background: linear-gradient(to left, rgba(255, 238, 219, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(255, 238, 219, 0) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .home .h1-gradient {
   margin: -50px 0 0 0;
   width: 100%;
@@ -205,9 +200,10 @@
   margin: 80px auto 0;
 }
 .lilit-type-footer__img {
+  width: 730px;
   position: absolute;
   z-index: -1;
-  bottom: 90px;
+  bottom: 160px;
   left: 50%;
   transform: translate(-50%, 0);
 }

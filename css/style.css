@@ -272,7 +272,7 @@ h1, .h1 {
 h1 span, .h1 span {
   display: block;
   background: #FFEEDB;
-  background: linear-gradient(to left, #FFEEDB 0%, #FFEEDB 19%, #FFEEDB 86%, #FFEEDB 100%);
+  background: linear-gradient(to left, rgba(255, 238, 219, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(255, 238, 219, 0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -287,6 +287,9 @@ h1 .h1-gradient, .h1 .h1-gradient {
   font-size: 260px;
   position: relative;
   z-index: 1;
+  background: linear-gradient(to left, rgba(255, 238, 219, 0) 0%, #FFEEDB 19%, #FFEEDB 86%, rgba(255, 238, 219, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .h1-decor::before {
   content: "";
